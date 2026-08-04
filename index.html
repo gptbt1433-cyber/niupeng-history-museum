@@ -30,7 +30,17 @@
   ['007','飞猫：禁止悬停','一只猫突然从天而降，然堡堡拿着金网试图收编它。猫拒绝，并把现场改造成了“猫飞牛跳”特别节目。'],
   ['008','地铁下一站：不知道','铭堡堡在红色候车亭端坐如钟，等待一班不存在但看起来很厉害的车。站内广播：请各位旅客保持可爱。'],
   ['009','广场泡澡，合法合规','白色浴缸被批准为临时交通工具。两位船长只带了泡泡和自信，目标是在路边完成一次史诗级漂移。'],
-  ['010','云朵打车：五星好评','然堡堡踩着云出发，铭堡堡负责在下面震惊。云司机全程不说话，只在到站时放了一个特别圆的屁声。']];
+  ['010','云朵打车：五星好评','然堡堡踩着云出发，铭堡堡负责在下面震惊。云司机全程不说话，只在到站时放了一个特别圆的屁声。'],
+  ['011','牛棚夏季制服发布会','铭堡堡宣布：这不是泳装，这是防止牛棚过热的高级工作服。村委会当场同意，主要是没人敢接这个话。'],
+  ['012','彩虹快递已签收','然堡堡拖着一块发光三角板进村，说是从天上掉下来的快递。收件人写着：全体还没睡的牛。'],
+  ['013','镜头前禁止伸蹄','本棚首次记录到“巨大牛蹄遮镜”事故。摄影师没生气，只是申请把工伤原因改成：离牛太近。'],
+  ['014','白马将军：指哪吃哪','铭堡堡骑着白马穿过雾山，手指远方宣布出征。后来大家发现它指的是村口那家草料自助。'],
+  ['015','伦敦雨夜失蹄案','大本钟下，然堡堡淋雨沉思：为什么出国也要下雨。雨回答：因为你带了牛棚的天气。'],
+  ['016','城东灵珠巡逻队','然堡堡携带一颗会发光的蓝珠巡街。有人问这是什么，它说：不知道，但它比我更有方向感。'],
+  ['017','倒着看世界比较合理','铭堡堡突然把镜头转了九十度，并坚持称这是新型牛棚航拍。围观群众表示：脖子先不答应。'],
+  ['018','眼镜脱逃事件','然堡堡的眼镜在石头地上独自旋转，疑似想去别的棚发展。本人没有追，只说有缘会再戴上。'],
+  ['019','木船外交：先划再说','两位代表坐小船穿过村河，谈判议题是午饭吃什么。划到桥下时一致通过：先上岸再谈。'],
+  ['020','古董灯架登高赛','两头牛把灯架当成了登山装备。裁判吹哨后宣布成绩：上面的牛胆子大，下面的牛腿比较酸。']];
   const grid=document.querySelector('#grid'), modal=document.querySelector('#modal');
   exhibits.forEach((x,i)=>{const b=document.createElement('button');b.className='card';b.innerHTML=`<div class="pic"><img src="${String(i+1).padStart(2,'0')}.jpg" alt="${x[1]}"><i>棚.${x[0]}</i></div><h3>${x[1]}</h3><p>进棚看看 ›</p>`;b.onclick=()=>open(i);grid.appendChild(b)});
   function open(i){const x=exhibits[i];document.querySelector('#modalImg').src=`${String(i+1).padStart(2,'0')}.jpg`;document.querySelector('#modalNo').textContent=`机密档案 / NO.${x[0]}`;document.querySelector('#modalTitle').textContent=x[1];document.querySelector('#modalStory').textContent=x[2];modal.hidden=false}function close(){modal.hidden=true}document.querySelector('.close').onclick=close;modal.onclick=e=>{if(e.target===modal)close()};
