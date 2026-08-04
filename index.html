@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="牛棚村集体资产：十件没有用但很牛的档案。">
+  <meta property="og:image" content="og.png">
+  <title>牛棚历史博物馆</title>
+  <style>
+    :root{--red:#b84b32;--ink:#282017;--straw:#efc865;--cream:#fff4d8;--sky:#bce8e8;--brown:#805033}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:radial-gradient(circle at 9% 5%,#fff8dd 0 5%,transparent 5.2%) 0 0/36px 36px,#f4dfaf;font-family:"Noto Serif SC","Microsoft YaHei",serif}button{font:inherit;color:inherit}.hero{overflow:hidden;position:relative;padding:67px 7vw 38px;background:linear-gradient(135deg,#9f382c,#c55b35 53%,#e49447);color:#fff9e6;border-bottom:9px solid var(--brown)}.tiny{font:700 12px/1.5 monospace;letter-spacing:.06em}.hero h1{font-size:clamp(53px,10vw,122px);line-height:.84;margin:26px 0 18px;letter-spacing:-.09em;text-shadow:5px 5px 0 #6c311f}.hero h1 em{font-style:normal;color:var(--straw);font-size:.66em}.hero-copy{font-size:clamp(17px,2.5vw,25px);font-weight:700;line-height:1.55}.sticker{position:absolute;border:4px solid var(--ink);border-radius:50%;background:var(--straw);color:var(--ink);font-weight:900;line-height:1.08;text-align:center;padding:19px 10px;box-shadow:4px 4px 0 var(--ink);transform:rotate(-10deg)}.s1{right:8%;top:42px}.s2{right:27%;bottom:52px;background:#bce8e8;transform:rotate(12deg)}.chaos{margin-top:14px;padding:11px 17px;border:3px solid var(--ink);background:var(--cream);border-radius:2px;cursor:pointer;font-weight:900;box-shadow:4px 4px 0 var(--ink)}.chaos:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}.meter{font:700 13px/1.4 monospace;max-width:500px;background:#68321f;margin:18px 0 0;padding:8px 10px}.marquee{white-space:nowrap;position:absolute;bottom:8px;left:0;animation:move 22s linear infinite;font:700 13px monospace;color:#ffe9a5}@keyframes move{to{transform:translateX(-35%)}}.intro{max-width:1120px;margin:36px auto 0;padding:16px 22px;background:#fff4d8;border:3px dashed var(--brown);font-size:16px;line-height:1.8}.collection{max-width:1240px;margin:auto;padding:66px 24px}.head p{font:700 13px monospace;color:var(--red);letter-spacing:.08em}.head h2{margin:4px 0 8px;font-size:clamp(30px,5vw,56px);letter-spacing:-.08em}.head h2 span{color:var(--red)}.head small{color:#665947}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:19px;margin-top:35px}.card{padding:0;background:var(--cream);border:3px solid var(--ink);text-align:left;cursor:pointer;box-shadow:5px 5px 0 var(--ink);transition:.16s}.card:hover{transform:rotate(-1deg) translateY(-4px);box-shadow:8px 9px 0 var(--ink)}.pic{position:relative;height:150px;overflow:hidden;background:#bbb}.pic img{width:100%;height:100%;object-fit:cover}.pic i{position:absolute;left:0;bottom:0;padding:5px 7px;background:var(--ink);color:var(--straw);font:700 11px monospace;font-style:normal}.card h3{margin:12px 11px 5px;font-size:18px;line-height:1.15}.card p{margin:0 11px 13px;color:var(--red);font-weight:800;font-size:13px}footer{padding:38px 20px;background:#38261d;color:#fbe6a5;text-align:center;font-weight:900;line-height:1.8}.modal{position:fixed;inset:0;z-index:5;display:grid;place-items:center;padding:20px;background:#281b16cc}.modal article{position:relative;max-width:850px;display:grid;grid-template-columns:minmax(220px,1fr) 1fr;gap:26px;padding:20px;background:var(--cream);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--straw)}.modalpic img{width:100%;height:100%;min-height:250px;object-fit:cover}.modal h2{font-size:30px;line-height:1.08;margin:14px 0}.modal .story{line-height:1.9;font-size:17px}.modal article>div:nth-child(2)>p:first-child{font:700 12px monospace;color:var(--red)}.close{position:absolute;z-index:1;right:-15px;top:-18px;width:42px;height:42px;border:3px solid var(--ink);border-radius:50%;background:var(--straw);font-size:28px;cursor:pointer}@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.pic{height:170px}}@media(max-width:600px){.hero{padding-top:40px}.s2{display:none}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.pic{height:140px}.card h3{font-size:16px}.modal article{grid-template-columns:1fr;max-height:92vh;overflow:auto}.modalpic img{min-height:190px}.intro{margin:22px 14px}.collection{padding:45px 14px}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero"><div class="sticker s1">本棚<br>营业</div><div class="sticker s2">哞！</div><p class="tiny">[ 牛棚村集体资产 · 闲人免进，牛除外 ]</p><h1>牛棚历史<br><em>博物馆</em></h1><p class="hero-copy">草垛旁边，水槽对面。<br>本棚专门收藏牛突然很忙的瞬间。</p><button class="chaos" id="door">敲一下牛棚门</button><p class="meter" id="meter">▸ 系统正常。只是有一头牛在盯着你。</p><div class="marquee">牛棚村广播：一号草垛禁止攀爬 · 浴缸不是船 · 但它开走了 · 请把猫从水桶里拿出来 · </div></section>
+    <section class="intro"><b>⚠ 村委会提醒：</b>本馆故事大多不靠谱，但照片里的快乐是真的。请不要在牛正在睡觉时突然大笑。</section>
+    <section class="collection"><div class="head"><p>牛棚村 · 第 4 号草垛档案</p><h2>本棚文物：<span>堡堡到处乱窜</span></h2><small>点击照片，领取一段来自草垛背后的不严谨解释</small></div><div class="grid" id="grid"></div></section>
+    <footer>牛棚历史博物馆™ · 由草、木头和一群不肯好好站着的牛维护<br><small>持续收集：只要你敢发，我就敢编。</small></footer>
+  </main>
+  <div class="modal" id="modal" hidden><article><button class="close" aria-label="关闭">×</button><div class="modalpic"><img id="modalImg" alt=""></div><div><p id="modalNo"></p><h2 id="modalTitle"></h2><p class="story" id="modalStory"></p><b>结论：这事很牛。</b></div></article></div>
+  <script>
+  const exhibits=[
+  ['001','月亮掉海里了，快捞','铭堡堡发现月亮在水里漂，于是开启了非常不专业的打捞行动。结果捞起来的是一只纸风车；月亮表示：我没事，你们先玩。'],
+  ['002','牛棚外交：贴贴协议','两位代表在广场完成了庄严的“你牛了”仪式。没有翻译，没有外交辞令，只有一张被系统盖章的快乐合影。'],
+  ['003','树洞里疑似有大瓜','树洞突然发光，二牛当场决定进去看看。根据可靠的不可靠消息，里面住着一棵会放烟花、但不爱回消息的树。'],
+  ['004','今天也要闪到别人','紫色小花不是装饰，是二人临时领取的“宇宙显眼包许可证”。戴上以后走路自带 BGM，拐弯必须慢。'],
+  ['005','玻璃碎了但我没碎','铭堡堡掉进镜子缝，遇见了 37 个自己。大家开会讨论了三小时，最后一致通过：先拍照，回头再想办法。'],
+  ['006','深海牛棚潜水队','深水里很黑，但两盏小灯说：怕什么，咱俩一闪一闪的。旁边的鱼看了五秒，默默申请加入编制。'],
+  ['007','飞猫：禁止悬停','一只猫突然从天而降，然堡堡拿着金网试图收编它。猫拒绝，并把现场改造成了“猫飞牛跳”特别节目。'],
+  ['008','地铁下一站：不知道','铭堡堡在红色候车亭端坐如钟，等待一班不存在但看起来很厉害的车。站内广播：请各位旅客保持可爱。'],
+  ['009','广场泡澡，合法合规','白色浴缸被批准为临时交通工具。两位船长只带了泡泡和自信，目标是在路边完成一次史诗级漂移。'],
+  ['010','云朵打车：五星好评','然堡堡踩着云出发，铭堡堡负责在下面震惊。云司机全程不说话，只在到站时放了一个特别圆的屁声。']];
+  const grid=document.querySelector('#grid'), modal=document.querySelector('#modal');
+  exhibits.forEach((x,i)=>{const b=document.createElement('button');b.className='card';b.innerHTML=`<div class="pic"><img src="${String(i+1).padStart(2,'0')}.jpg" alt="${x[1]}"><i>棚.${x[0]}</i></div><h3>${x[1]}</h3><p>进棚看看 ›</p>`;b.onclick=()=>open(i);grid.appendChild(b)});
+  function open(i){const x=exhibits[i];document.querySelector('#modalImg').src=`${String(i+1).padStart(2,'0')}.jpg`;document.querySelector('#modalNo').textContent=`机密档案 / NO.${x[0]}`;document.querySelector('#modalTitle').textContent=x[1];document.querySelector('#modalStory').textContent=x[2];modal.hidden=false}function close(){modal.hidden=true}document.querySelector('.close').onclick=close;modal.onclick=e=>{if(e.target===modal)close()};
+  const meter=document.querySelector('#meter');document.querySelector('#door').onclick=()=>meter.textContent=meter.textContent.includes('系统正常')?'▸ 今日值班牛：它说别问，问就是在反刍。':'▸ 系统正常。只是有一头牛在盯着你。';
+  </script>
+</body></html>
