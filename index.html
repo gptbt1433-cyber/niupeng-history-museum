@@ -45,5 +45,6 @@
   exhibits.forEach((x,i)=>{const b=document.createElement('button');b.className='card';b.innerHTML=`<div class="pic"><img src="${String(i+1).padStart(2,'0')}.jpg" alt="${x[1]}"><i>棚.${x[0]}</i></div><h3>${x[1]}</h3><p>进棚看看 ›</p>`;b.onclick=()=>open(i);grid.appendChild(b)});
   function open(i){const x=exhibits[i];document.querySelector('#modalImg').src=`${String(i+1).padStart(2,'0')}.jpg`;document.querySelector('#modalNo').textContent=`机密档案 / NO.${x[0]}`;document.querySelector('#modalTitle').textContent=x[1];document.querySelector('#modalStory').textContent=x[2];modal.hidden=false}function close(){modal.hidden=true}document.querySelector('.close').onclick=close;modal.onclick=e=>{if(e.target===modal)close()};
   const meter=document.querySelector('#meter');document.querySelector('#door').onclick=()=>meter.textContent=meter.textContent.includes('系统正常')?'▸ 今日值班牛：它说别问，问就是在反刍。':'▸ 系统正常。只是有一头牛在盯着你。';
+  const RELEASE_VERSION='2026-08-03-21-50';async function checkForMuseumUpdate(){try{const r=await fetch(`version.json?now=${Date.now()}`,{cache:'no-store'});const v=await r.json();if(v.version&&v.version!==RELEASE_VERSION)location.reload()}catch{}}setTimeout(checkForMuseumUpdate,900);addEventListener('focus',checkForMuseumUpdate);document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkForMuseumUpdate()});
   </script>
 </body></html>
